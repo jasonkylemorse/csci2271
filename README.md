@@ -1,7 +1,7 @@
 Computer Systems
 ==================
 
-This repository contains problem set assignments from CSCI2271 - Computer Systems (Spring 2015). More information on how the code works as well as known problems can be found in each problem set's writeup. 
+This repository contains problem set assignments from CSCI2271 - Computer Systems (Spring 2015). More information regarding how the code works, as well as known problems, can be found in each problem set's writeup. 
 
 #####Problem Set 1 (Introduction to C, Pointers, Finite State Machines)
 * `assignment1-jasonmorse.c` - This program reads in a string of characters and uses an FSM to replace comments (chars surrounded by /* */) with a single space character. 

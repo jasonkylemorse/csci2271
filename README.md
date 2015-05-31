@@ -13,11 +13,11 @@ This repository contains problem set assignments from CSCI2271 - Computer System
 
 #####Problem Set 3 (Pointers to Pointers, Linked Lists)
 * `Part A`
-	*`assignment3main-jasonmorse.c` - This program reads in a string of chars and uses an FSM to determine if a user-specified pattern exists. Structs were used to contain the string and its length.
-	*`assignment3-jasonmorse.h` & `assignment3-jasonmorse.c` - Header and implementation for the string struct and related functions. 
+	* `assignment3main-jasonmorse.c` - This program reads in a string of chars and uses an FSM to determine if a user-specified pattern exists. Structs were used to contain the string and its length.
+	* `assignment3-jasonmorse.h` & `assignment3-jasonmorse.c` - Header and implementation for the string struct and related functions. 
 * `Part B`
-	*`assignment3PartB.c` - This program reads in a poem and splits it into individual lines. Each line is linked together using a double linked list data structure. 
-	*`definitions.h` & `definitions.c` - Header and implementation for the node structs and related functions. 
+	* `assignment3PartB.c` - This program reads in a poem and splits it into individual lines. Each line is linked together using a double linked list data structure. 
+	* `definitions.h` & `definitions.c` - Header and implementation for the node structs and related functions. 
 
 #####Problem Set 4 (Structs as Linked List Payloads, Pointers to Functions)
 * `Part A` 

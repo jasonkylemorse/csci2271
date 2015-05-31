@@ -1,3 +1,21 @@
-In this assignment, I created three processes and used pipes to chain them all together. I created pipes by using the pipe() system call and I created additional processes by forking.
-I began by having Process 1 read in a single line from the source file. This process would take that line and write it to the first pipe that connects Process 1 and Process 2. Process 2 then reads from this same pipe and loads the line into a read buffer of max size 80 chars. Once the line is read in, Process 2 is responsible for changing the case of each individual character. I used the toupper() and tolower() functions to perform the conversion after checking with isupper() and islower(). Once this was complete, Process 2 wrote the result into the second pipe that connects Process 2 and Process 3. Process 3 reads this result into a second read buffer of max size 80 chars, and then writes this new line to a file. I was able to ensure that processes would wait to start working on the next line by using two different PIDs and two waitpid() calls. I had Process 2 wait for confirmation from Process 3, and I had Process 1 wait for confirmation from Process 2.
-The program appears to be working correctly. The only problem is that when I run the function in Terminal, it works for some time, and then eventually causes my machine to shut down. I have no idea why this is happening, but I managed to convert and read the first couple thousand lines of the story into the new file. After that point, my virtual box shuts down so it obviously stops working. The results up to that point are all correct. I’ve attached the output file I got.
+In this assignment, I created three processes and used pipes to chain them all 
+together. I created pipes by using the pipe() system call and I created additional
+processes by forking.
+I began by having Process 1 read in a single line from the source file. This 
+process would take that line and write it to the first pipe that connects Process 
+1 and Process 2. Process 2 then reads from this same pipe and loads the line into 
+a read buffer of max size 80 chars. Once the line is read in, Process 2 is responsible
+for changing the case of each individual character. I used the toupper() and tolower() 
+functions to perform the conversion after checking with isupper() and islower(). 
+Once this was complete, Process 2 wrote the result into the second pipe that connects 
+Process 2 and Process 3. Process 3 reads this result into a second read buffer of max 
+size 80 chars, and then writes this new line to a file. I was able to ensure that 
+processes would wait to start working on the next line by using two different PIDs 
+and two waitpid() calls. I had Process 2 wait for confirmation from Process 3, and I 
+had Process 1 wait for confirmation from Process 2.
+The program appears to be working correctly. The only problem is that when I run the
+function in Terminal, it works for some time, and then eventually causes my machine 
+to shut down. I have no idea why this is happening, but I managed to convert and read 
+the first couple thousand lines of the story into the new file. After that point, my
+virtual box shuts down so it obviously stops working. The results up to that point 
+are all correct. I’ve attached the output file I got.

@@ -1,2 +1,14 @@
-Part AIn this part of the assignment, I read the input and pattern strings intomemory. Then I copied these char sequences into String structures. I implemented a finite state machine that consists of only two states, OUT and IN. I compared the first characters of each and moved to state IN if they were the same (I also set “start” equal to the index for “input”). If the chars continued being equal, the machine would stay in state IN. Else, it would go back to OUT. By saving the variable “start”, I was able to continue checking for the pattern at the appropriate location. If the end of the pattern string was reached, and the machine was in state IN, then a match was found.
-Part BIn this part of the assignment, I traversed the given linked list of Stringstructures and pulled individual words out into word structures. I linked these word structures together into another linked list, and if I found a duplicate I would increase the frequency and update the array with the line location. If the word was new, I would add a new node. Once the entire input was converted into a linked list of word structures, I called a function to identify the most frequent word.
+Part AIn this part of the assignment, I read the input and pattern strings into memory. 
+Then I copied these char sequences into String structures. I implemented a finite 
+state machine that consists of only two states, OUT and IN. I compared the first 
+characters of each and moved to state IN if they were the same (I also set “start” 
+equal to the index for “input”). If the chars continued being equal, the machine 
+would stay in state IN. Else, it would go back to OUT. By saving the variable “start”, 
+I was able to continue checking for the pattern at the appropriate location. If the
+end of the pattern string was reached, and the machine was in state IN, then a 
+match was found.
+Part BIn this part of the assignment, I traversed the given linked list of Stringstructures and pulled individual words out into word structures. I linked these word
+structures together into another linked list, and if I found a duplicate I would
+increase the frequency and update the array with the line location. If the word 
+was new, I would add a new node. Once the entire input was converted into a linked 
+list of word structures, I called a function to identify the most frequent word.

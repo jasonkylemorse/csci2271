@@ -36,3 +36,4 @@ This repository contains problem set assignments from CSCI2271 - Computer System
 
 #####Problem Set 7 (Memory Allocation, Mark & Sweep Algorithm for Garbage Collection)
 * `myalloc.h` & `myalloc.c` - This program is a recreation of the malloc and free Unix functions. It creates a pseudo heap to work with, and it explores the inner workings of memory allocation and garbage collection. There are functions for marking, allocating, coalescing free blocks, and cleaning up garbage.
+* Various test files are provided.
